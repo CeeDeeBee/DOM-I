@@ -90,3 +90,19 @@ contactPs[2].textContent = siteContent['contact']['email'];
 
 // Footer
 document.querySelector('footer p').textContent = siteContent['footer']['copyright'];
+
+// New Content
+// Nav color
+const linkElements = document.getElementsByTagName('a');
+for (let i = 0; i < linkElements.length; i++) linkElements[i].style.color = 'green';
+
+// New nav links
+const nav = document.getElementsByTagName('nav')[0];
+
+const newEndA = document.createElement('a');
+newEndA.textContent = 'Sign Up';
+nav.appendChild(newEndA);
+
+const newBeginningA = document.createElement('a');
+newBeginningA.textContent = 'Awards';
+nav.prepend(newBeginningA);
