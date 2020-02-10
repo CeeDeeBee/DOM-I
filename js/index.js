@@ -106,3 +106,6 @@ nav.appendChild(newEndA);
 const newBeginningA = document.createElement('a');
 newBeginningA.textContent = 'Awards';
 nav.prepend(newBeginningA);
+
+// Stretch style update
+document.querySelector('.cta').style.justifyContent = 'space-evenly';
